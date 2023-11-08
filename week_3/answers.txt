@@ -1,0 +1,11 @@
+sort1 uses: bubble
+
+How do you know?: The random5000.txt and random10000.txt finished the slowest Which is confirmed by theta(n^2). Similarly, sorted5000.txt and sorted10000.txt finished the fastest which is confirmed by Omega(n)
+
+sort2 uses: Merge
+
+How do you know?: The random5000.txt and random10000.txt finished the fastest which is confirmed by theta(nlogn) also by the video demonstrated that Merge sort finsihed 1st.Similarly, sorted5000.txt and sorted10000.txt finished fastest aswell since Omega(nlogn) which is same as theta.
+
+sort3 uses: selection
+
+How do you know?: The random5000.txt and random10000.txt finished slower than merge but faster than bubble as is the pattern in the video demonstrated.Similarly, sorted5000.txt and sorted10000.txt finished slower than merge but faster than bubble which matches with random since theta and Omega are same for selection
