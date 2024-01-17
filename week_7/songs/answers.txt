@@ -1,0 +1,3 @@
+To characterise a listeners aura based on top 100 songs in a specific year might not give us the real aura as they might have listened
+to some songs based on the mood swings or some event they went through in that specific year. A better way would be to do this over
+a greater collection of data spanning maybe 5 or 10 years
