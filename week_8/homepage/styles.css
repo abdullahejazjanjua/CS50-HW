@@ -1,0 +1,92 @@
+.first-header
+{
+    text-align: center;
+    margin-top: 6%;
+    font-family: Arial;
+}
+
+.first-para
+{
+    text-align: center;
+    font-family: Arial;
+    margin-left: 6%;
+    font-family: Georgia;
+}
+
+h3
+{
+    margin-left: 3%;
+    font-family: Arial, sans-serif;
+}
+.first-list
+{
+    margin-left: 5%;
+    list-style-type: square;
+}
+.second-list
+{
+    list-style-type: square;
+    margin-top: 19%;
+    list-style-type: none;
+
+}
+.button-container
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.first-button, .second-button, .eight-button
+{
+    display: inline-block;
+}
+
+.first-button
+{
+    color: white;
+    background-color: blue;
+}
+
+.second-button
+{
+    color: white;
+    background-color: blue;
+}
+.eight-button
+{
+    color: white;
+    background-color: blue;
+}
+.button-container-projects
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.seventh-button
+{
+    display: inline-block;
+}
+.button-container-research
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sixth-button
+{
+    display: inline-block;
+}
+.h1-of-projects
+{
+    text-align: center;
+}
+.h1-of-research
+{
+    text-align: center;
+}
+
+

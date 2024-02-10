@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            window.onload = function()
+            {
+                let button1 = document.querySelector('#week_1');
+                button1.addEventListener('click', function() {
+                    button1.style.color = 'red';
+                    setTimeout(function() {
+                        button1.style.color = 'white';
+                    }, 500)
+                    document.getElementById('feedback2').textContent = 'Incorrect.';
+                });
+                let button2 = document.querySelector('#week_6');
+                button2.addEventListener('click', function() {
+                    button2.style.color = 'red';
+                    setTimeout(function() {
+                        button2.style.color = 'white';
+                    }, 500)
+                    document.getElementById('feedback2').textContent = 'Incorrect.';
+                });
+                let button3 = document.querySelector('#week_9');
+                button3.addEventListener('click', function() {
+                    button3.style.color = 'green';
+                    document.getElementById('feedback2').textContent = 'Correct!';
+                });
+                document.getElementById('mybutton').addEventListener('click', function (event) {
+                event.preventDefault();
+                if (document.getElementById('myTextbox').value.toLowerCase() == "blue")
+                {
+                    document.getElementById('myTextbox').style.color = 'green';
+                    document.getElementById('feedback').textContent = 'Correct!';
+                }
+                else
+                {
+                    document.getElementById('myTextbox').style.color = 'red';
+                    document.getElementById('feedback').textContent = 'Incorrect.';
+                }
+    });
+}
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>
+                    DNA PSET is in which Week?
+                </h3>
+                <p id="feedback2" ></p>
+                <button id = "week_1">(a) Week 1</button>
+
+                <button id = "week_9">(b) Week 9</button>
+
+                <button id = "week_6">(c) Week 6</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>
+                    What is the color of David's jeans??
+                </h3>
+                <p id="feedback" ></p>
+                <form  autocomplete = "off">
+                    <input type = "text" placeholder = "Answer" id = 'myTextbox'>
+                    <button id = "mybutton">submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
