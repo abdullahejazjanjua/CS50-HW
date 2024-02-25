@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h2>QUOTE</h2>
+<table class = "table table-striped">
+    <thead>
+        <th scope = "col" >PRICE</th>
+        <th scope = "col" >SYMBOL</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ quote.symbol }}</td>
+            <td>{{ formated_price }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+
+    <div class="section">
+
+        <table class = "table table-striped">
+            <thead>
+                <tr>
+                    <th  scope = "col">Symbol</th>
+                    <th  scope = "col" >Shares</th>
+                    <th  scope = "col" >Price</th>
+                    <th  scope = "col" >Transacted</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- TODO: Loop through the database entries to display them in this table -->
+                {% for stock in stocks_info %}
+                <tr>
+                    <td>{{ stock.Symbol }}</td>
+                    <td>{{ stock.Shares }}</td>
+                    <td>{{ stock.TotalA}}</td>
+                    <td>{{ stock.Transacted }}</td>
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+
+{% endblock %}

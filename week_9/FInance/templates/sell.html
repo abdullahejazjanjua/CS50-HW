@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <form action="/sell" method="POST">
+        <div>
+            <select name="symbol" class = "btn btn-secondary dropdown-toggle">
+                    {% for symbol in symbols %}
+                             <option value="{{ symbol }}">{{ symbol }}</option>
+                    {% endfor %}
+            </select>
+        </div>
+        <div>
+            <input  name = "shares"  placeholder = "Shares" autocomplete = "off" autofocus class="form-control mx-auto w-auto">
+        </div>
+        <div>
+            <button class="btn btn-primary" type = "submit">Sell</button>
+        </div>
+    </form>
+
+{% endblock %}
